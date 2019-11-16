@@ -40,6 +40,26 @@ new StunnelBuilder(context)
 
 Once `start()` is called a temporary configuration file is created which is used to run a Stunnel process. To kill the process (thus closing all connections) you need to `close()` the returned `Stunnel` object.
 
+## Installation
+
+Add jitpack.io to your project .gradle file like this:
+
+```
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+   }
+```
+
+Then add the library to your dependencies in your module .gradle file:
+````
+dependencies {
+    implementation 'com.github.FWink:android-stunnel-lib:master-SNAPSHOT'
+}
+````
+
 ## Example app
 
 You can see this library in action here: https://github.com/FWink/home-assistant-android-stunnel
