@@ -1,0 +1,2 @@
+include ':stunnel'
+rootProject.name='android-stunnel-lib'
