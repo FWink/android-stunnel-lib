@@ -134,16 +134,11 @@ public class StunnelBuilder extends StunnelConfigBuilder<StunnelBuilder> {
             writer.write('\uFEFF');
             //write file content
             writer.write(getConfigFileContent());
+
+            writer.flush();
         }
         finally {
-            if(writer != null) {
-                try {
-                    writer.close();
-                }
-                catch(IOException e) {
-                    //ignore
-                }
-            }
+            Util.close(writer);
         }
 
         return configFile;
@@ -415,6 +410,13 @@ public class StunnelBuilder extends StunnelConfigBuilder<StunnelBuilder> {
         }
 
         /**
+         * Sets the service into client mode: calls {@link #client(boolean)} with true.
+         */
+        public ServiceBuilder client() {
+            return client(true);
+        }
+
+        /**
          * <pre>{@code
          *
 
@@ -531,6 +533,7 @@ public class StunnelBuilder extends StunnelConfigBuilder<StunnelBuilder> {
                 //we must NOT use a BOM here
                 writer = new FileWriter(file);
                 writer.write(PreSharedKey.makePskSecretsFile(pskSecrets));
+                writer.flush();
                 Util.close(writer);
             }
             catch(IOException e) {

@@ -1,6 +1,6 @@
 package de.fwinkel.android_stunnel;
 
-class StunnelBoolean implements StunnelValue {
+public class StunnelBoolean implements StunnelValue {
     protected final boolean value;
 
     StunnelBoolean(boolean value) {
