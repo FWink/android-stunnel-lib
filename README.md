@@ -69,3 +69,5 @@ That app adds PSK client authentication to HomeAssistant (https://www.home-assis
 # Limitations
 
 Currently only a small handfull of Stunnel options is implemented. You can manually use other options by calling `ServiceBuilder#setOption(String, String)`. Full list of Stunnel options: https://www.stunnel.org/static/stunnel.html
+
+As there are only Android ARM binaries provided via https://www.stunnel.org/downloads.html, it is currently not possible to run this on x86 devices or emulators. To test this library in an emulator please use an arm64-v8a or armeabi-v7a system image.
