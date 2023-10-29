@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/android-stunnel-lib.iml" filepath="$PROJECT_DIR$/android-stunnel-lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/stunnel/stunnel.iml" filepath="$PROJECT_DIR$/.idea/modules/stunnel/stunnel.iml" />
-    </modules>
-  </component>
-</project>
