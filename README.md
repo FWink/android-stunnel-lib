@@ -56,7 +56,7 @@ Add jitpack.io to your project .gradle file like this:
 Then add the library to your dependencies in your module .gradle file:
 ````
 dependencies {
-    implementation 'com.github.FWink:android-stunnel-lib:master-SNAPSHOT'
+    implementation 'com.github.FWink:android-stunnel-lib:1.0.2'
 }
 ````
 
@@ -65,6 +65,12 @@ dependencies {
 You can see this library in action here: https://github.com/FWink/home-assistant-android-stunnel
 
 That app adds PSK client authentication to HomeAssistant (https://www.home-assistant.io) by embedding a WebView that connects to a local Stunnel proxy. The `StunnelTask` class in https://github.com/FWink/home-assistant-android-stunnel/blob/master/app/src/main/java/de/fwinkel/homeassistantstunnel/HomeAssistantActivity.java creates a `Stunnel` object. Once that is done the WebView connects to `localhost:PORT` and displays the HomeAssistant web UI.
+
+# Stunnel version
+
+Stunnel version 5.71
+
+Android binaries are taken directly from https://www.stunnel.org/downloads.html
 
 # Limitations
 
